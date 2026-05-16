@@ -1,0 +1,19 @@
+{
+  "name": "qiankun+Vue3+vue-cli+ModuleFederation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.3",
+  "devDependencies": {
+    "@module-federation/enhanced": "^2.4.0",
+    "@qvm/utils": "workspace:*",
+    "rimraf": "^6.1.3",
+    "webpack": "^5.106.2"
+  }
+}

@@ -1,0 +1,10 @@
+packages:
+  - packages/*
+  - apps/**/*
+
+catalog:
+  element-plus: ^2.13.7
+  qiankun: ^2.10.16
+  vue: ^3.2.13
+  vue-router: ^5.0.6
+  webpack: 5.106.2
