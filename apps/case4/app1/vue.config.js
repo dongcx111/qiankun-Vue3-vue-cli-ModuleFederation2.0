@@ -110,14 +110,14 @@ module.exports = new Promise((resolve) => {
             vue: {
               singleton: true,
               requiredVersion: '^3.5.34',
-              // import: false,
+              import: false,
               shareKey: 'vue',
               shareScope: 'default',
             },
             vueRouter: {
               singleton: true,
               requiredVersion: '^5.0.6',
-              // import: false,
+              import: false,
               shareKey: 'vue-router',
               shareScope: 'default',
             }

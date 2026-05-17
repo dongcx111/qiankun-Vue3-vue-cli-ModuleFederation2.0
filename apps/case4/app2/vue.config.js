@@ -116,7 +116,7 @@ module.exports = new Promise((resolve) => {
           shared: {
             vue: {
               singleton: true,
-              // import: false,
+              import: false,
               requiredVersion: '^3.5.34',
               shareKey: 'vue',
               shareScope: 'default',

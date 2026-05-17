@@ -27,6 +27,7 @@
 >> 2. 在 qiankun 微应用中基座收敛公共组件提供给子应用使用，属于提供方，子应用才是消费方；
 >> 3. Module Federation 中 import:false 选项是给提供方使用的，也就是子应用，[前往官网查看说明](https://module-federation.io/zh/configure/shared.html#import)；
 >> 4. 所以在 qiankun 中本不应该给子应用设置，但有趣的是 Module Federation 中消费者和生产者是可以共存的，qiankun 中的主从关系是明确的，从 Module Federation 角度来看这样用也是可以的 😂；
+>> 5. Module Federation 1.0 与 qiankun 的集成中，设置 import:false 后，子应用通过[基于 Promise 的动态 Remote](https://www.webpackjs.com/concepts/module-federation/#promisebaseddynamicremotes)可以实现依赖共享，查看[Demo](https://github.com/dongcx111/qiankun-ModuleFederation)；
 
 
 
