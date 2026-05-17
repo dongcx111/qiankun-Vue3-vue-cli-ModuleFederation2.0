@@ -3,7 +3,9 @@ const AutoImport = require('unplugin-auto-import/webpack')
 const Components = require('unplugin-vue-components/webpack')
 const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
 
-const { ModuleFederationPlugin } = require("webpack").container;
+const {
+  ModuleFederationPlugin,
+} = require('@module-federation/enhanced/webpack');
 
 const path = require('path')
 

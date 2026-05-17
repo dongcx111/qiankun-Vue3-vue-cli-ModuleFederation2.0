@@ -1,5 +1,7 @@
 const { defineConfig } = require('@vue/cli-service')
-const { ModuleFederationPlugin } = require("webpack").container;
+const {
+  ModuleFederationPlugin,
+} = require('@module-federation/enhanced/webpack');
 const path = require('path')
 module.exports = defineConfig({
   transpileDependencies: true,

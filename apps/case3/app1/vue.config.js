@@ -1,7 +1,9 @@
 const { defineConfig } = require('@vue/cli-service')
 const { name } = require("./package");
 
-const { ModuleFederationPlugin } = require("webpack").container;
+const {
+  ModuleFederationPlugin,
+} = require('@module-federation/enhanced/webpack');
 
 const { remoteRuntime } = require("@qvm/utils");
 
