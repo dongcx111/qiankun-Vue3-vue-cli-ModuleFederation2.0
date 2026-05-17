@@ -18,6 +18,10 @@
             <el-container>
                 <el-aside width="200px">
                     <el-menu class="el-menu-vertical-demo" router style="width: 100%;height: 100%;">
+                        <el-menu-item index="/">
+                            <i class="el-icon-setting"></i>
+                            <span>Welcome</span>
+                        </el-menu-item>
                         <el-menu-item index="/app1">
                             <i class="el-icon-setting"></i>
                             <span>app1</span>
@@ -25,14 +29,6 @@
                         <el-menu-item index="/app2">
                             <i class="el-icon-setting"></i>
                             <span>app2</span>
-                        </el-menu-item>
-                        <el-menu-item index="/app3">
-                            <i class="el-icon-setting"></i>
-                            <span>app3</span>
-                        </el-menu-item>
-                        <el-menu-item index="/app4">
-                            <i class="el-icon-setting"></i>
-                            <span>app4</span>
                         </el-menu-item>
                     </el-menu>
                 </el-aside>

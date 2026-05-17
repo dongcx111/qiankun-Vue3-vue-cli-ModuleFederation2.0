@@ -3,8 +3,7 @@ const { ModuleFederationPlugin } = require("webpack").container;
 const path = require('path')
 module.exports = defineConfig({
   transpileDependencies: true,
-  // publicPath: "http://localhost:8082",
-  publicPath: "auto",
+  publicPath: "http://localhost:8082",
   devServer: {
     port: 8082,
     headers: {
@@ -13,7 +12,7 @@ module.exports = defineConfig({
   },
   configureWebpack: {
     optimization: {
-      splitChunks: false,
+      // splitChunks: false,
     },
     plugins: [
       new ModuleFederationPlugin({

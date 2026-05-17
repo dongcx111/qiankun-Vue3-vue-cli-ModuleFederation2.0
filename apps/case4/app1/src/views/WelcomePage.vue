@@ -8,9 +8,6 @@
 
 <script setup>
   import { defineAsyncComponent } from 'vue';
-  // import { loadComponent } from '../utils/index'
-
-  // const HelloWorldMain = defineAsyncComponent(() => (loadComponent('mainApp', './HelloWorld')()))
   const HelloWorldMain = defineAsyncComponent(() => import('mainApp/HelloWorld'))
 </script>
 

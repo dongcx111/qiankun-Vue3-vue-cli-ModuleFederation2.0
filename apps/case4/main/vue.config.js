@@ -44,10 +44,10 @@ module.exports = defineConfig({
           vue: {
             singleton: true,
             requiredVersion: '^3.5.34',
-            // import: false,
             shareKey: 'vue',
             shareScope: 'default',
           },
+
           vueRouter: {
             singleton: true,
           }
@@ -61,60 +61,60 @@ module.exports = defineConfig({
       }),
     ]
   },
-  // chainWebpack: config => {
-  //   config.optimization.splitChunks({
-  //     chunks: 'all',
-  //     cacheGroups: {
-  //       // qiankunChunk: {
-  //       //   name: 'qiankun-chunk-vendors',
-  //       //   test: /[\\/]node_modules[\\/]qiankun/,
-  //       //   priority: 8,
-  //       //   chunks: 'initial'
-  //       // },
-  //       // coreJsVendors: {
-  //       //   name: 'core-js-chunk-vendors',
-  //       //   test: /[\\/]node_modules[\\/]core-js/,
-  //       //   priority: -10,
-  //       //   chunks: 'initial'
-  //       // },
-  //       // elementPlusVendors: {
-  //       //   name: 'element-plus-chunk-vendors',
-  //       //   test: /[\\/]node_modules[\\/]@?element-plus/,
-  //       //   priority: -10,
-  //       //   chunks: 'initial'
-  //       // },
-  //       vueVendors: {
-  //         name: 'vue-chunk-vendors',
-  //         test: /[\\/]node_modules[\\/]@vue[\\/]/,
-  //         priority: 9,
-  //         chunks: 'all'
-  //       },
-  //       vueRouterVendors: {
-  //         name: 'vue-router-chunk-vendors',
-  //         test: /[\\/]node_modules[\\/]vue-router[\\/]/,
-  //         priority: 8,
-  //         chunks: 'all'
-  //       },
-  //       // lodashVendors: {
-  //       //   name: 'lodash-chunk-vendors',
-  //       //   test: /[\\/]node_modules[\\/]lodash/,
-  //       //   priority: -10,
-  //       //   chunks: 'initial'
-  //       // },
-  //       defaultVendor: {
-  //         name: 'chunk-vendors',
-  //         test: /[\\/]node_modules[\\/]/,
-  //         priority: -11,
-  //         chunks: 'all'
-  //       },
-  //       commonChunk: {
-  //         name: 'chunk-common',
-  //         minChunks: 2,
-  //         priority: -20,
-  //         chunks: 'all',
-  //         reuseExistingChunk: true
-  //       }
-  //     }
-  //   })
-  // }
+  chainWebpack: config => {
+    config.optimization.splitChunks({
+      chunks: 'all',
+      cacheGroups: {
+        // qiankunChunk: {
+        //   name: 'qiankun-chunk-vendors',
+        //   test: /[\\/]node_modules[\\/]qiankun/,
+        //   priority: 8,
+        //   chunks: 'initial'
+        // },
+        // coreJsVendors: {
+        //   name: 'core-js-chunk-vendors',
+        //   test: /[\\/]node_modules[\\/]core-js/,
+        //   priority: -10,
+        //   chunks: 'initial'
+        // },
+        // elementPlusVendors: {
+        //   name: 'element-plus-chunk-vendors',
+        //   test: /[\\/]node_modules[\\/]@?element-plus/,
+        //   priority: -10,
+        //   chunks: 'initial'
+        // },
+        vueVendors: {
+          name: 'vue-chunk-vendors',
+          test: /[\\/]node_modules[\\/]@vue[\\/]/,
+          priority: 9,
+          chunks: 'all'
+        },
+        vueRouterVendors: {
+          name: 'vue-router-chunk-vendors',
+          test: /[\\/]node_modules[\\/]vue-router[\\/]/,
+          priority: 8,
+          chunks: 'all'
+        },
+        // lodashVendors: {
+        //   name: 'lodash-chunk-vendors',
+        //   test: /[\\/]node_modules[\\/]lodash/,
+        //   priority: -10,
+        //   chunks: 'initial'
+        // },
+        defaultVendor: {
+          name: 'chunk-vendors',
+          test: /[\\/]node_modules[\\/]/,
+          priority: -11,
+          chunks: 'all'
+        },
+        commonChunk: {
+          name: 'chunk-common',
+          minChunks: 2,
+          priority: -20,
+          chunks: 'all',
+          reuseExistingChunk: true
+        }
+      }
+    })
+  }
 })

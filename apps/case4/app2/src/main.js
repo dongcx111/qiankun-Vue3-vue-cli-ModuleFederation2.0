@@ -30,9 +30,6 @@
 //     instance = null;
 // }
 
-// import { loadComponent } from './utils/index'
-// import "./public-path";
-
 
 // 创建异步加载函数
 const loadApp = async () => {

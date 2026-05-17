@@ -102,14 +102,6 @@ module.exports = new Promise((resolve) => {
         new ModuleFederationPlugin({
           ...commonMFOptions,
           remotes: {
-            //基于 Promise 的动态 Remote
-            // app2: remoteRuntime("http://localhost:8082", "app2"),
-
-            //URL 方式
-            // app2: "app2@http://localhost:8082/remoteEntry.js",
-
-            //基于 Promise 的动态 Remote
-            // mainApp: remoteRuntime("http://localhost:8080", "mainApp"),
 
             //URL 方式
             mainApp: "mainApp@http://localhost:8080/remoteEntry.js",
@@ -118,7 +110,7 @@ module.exports = new Promise((resolve) => {
             vue: {
               singleton: true,
               requiredVersion: '^3.5.34',
-              import: false,
+              // import: false,
               shareKey: 'vue',
               shareScope: 'default',
             },
