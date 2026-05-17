@@ -56,7 +56,6 @@ module.exports = new Promise((resolve) => {
             "./HelloWorld2": "./src/components/HelloWorld.vue",
           },
 
-          //构建从入口开始，如果使用了远程模块，需要在这里加上
           remotes: {
             //基于 Promise 的动态 Remote
             // app1: remoteRuntime("http://localhost:8081", "app1"),
